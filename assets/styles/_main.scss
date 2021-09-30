@@ -1,0 +1,13 @@
+.Vue-Toastification__toast--success {
+  background-color: $primary;
+}
+
+.confirm-modal {
+  .modal-content {
+    background-color: transparent;
+    border: none;
+  }
+}
+.modal-backdrop {
+  opacity: 0.8!important;
+}

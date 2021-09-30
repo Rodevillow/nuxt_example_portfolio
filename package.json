@@ -1,0 +1,36 @@
+{
+  "name": "configurator",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "PORT=3001 nuxt-ts",
+    "build": "nuxt-ts build",
+    "generate": "nuxt-ts generate",
+    "start": "nuxt-ts start"
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^2.1.0",
+    "@nuxtjs/auth-next": "5.0.0-1624817847.21691f1",
+    "@nuxtjs/axios": "^5.13.1",
+    "@nuxtjs/moment": "^1.6.1",
+    "@nuxtjs/recaptcha": "^1.0.4",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
+    "bson": "^4.4.0",
+    "core-js": "^3.9.1",
+    "nuxt": "^2.15.3",
+    "nuxt-i18n": "^6.28.1",
+    "vue-toastification": "^1.7.11",
+    "vue2-datepicker": "^3.9.2",
+    "vue2-timepicker": "^1.1.6"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.6",
+    "@nuxt/typescript-build": "^2.1.0",
+    "fibers": "^5.0.0",
+    "sass": "1.32.8",
+    "sass-loader": "10"
+  }
+}

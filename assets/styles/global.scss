@@ -1,0 +1,28 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap-vue/src/index.scss";
+
+@import "./fonts";
+@import "./transitions";
+
+body {
+  color: $textColor;
+  background-color: $white;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+// Position breakpoints
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    // Common values
+    @each $position in $positions {
+      .position#{$infix}-#{$position} {
+        position: $position !important;
+      }
+    }
+  }
+}
